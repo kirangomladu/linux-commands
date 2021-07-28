@@ -1,0 +1,9 @@
+$cat :concanate and print o/p in std.o/p screen
+$nano :(dabian)this is write out/commit command
+$emacs
+$vi:(red hat)
+
+ex.
+$cat <filename>
+$cat > <filename> edit file
+$cat >>
