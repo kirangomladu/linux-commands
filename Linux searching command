@@ -1,0 +1,17 @@
+open terminal by keyboard:
+ctrl+alt+T
+first line of linux terminal:payal@payal-virtualbox:~$
+where payal:user name
+payal-virtualbox:is host name
+~:/home directory
+$: soldier login
+commands:
+$pwd :print working directory
+$whatis pwd:this gives info about cmd
+$ls :list directory containt
+$ls -l :list directory containt in list view
+
+serching cmd:
+$which :exactly gives what we want ex.which diff
+$whereis :same name file show ex.whereis diff
+$locate:pattern maching type ex.locate diff
