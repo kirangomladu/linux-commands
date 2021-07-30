@@ -6,6 +6,17 @@ $cd /etc/
 $ cat passwd(shows all sys+users)
 we require only human users for that command used is =$grep
 $cat passwd | grep /bin/bash    (grep is used with pipe symbol(cmd1 |cmd 2))
+payal@payal-VirtualBox:/etc$ cat passwd | grep /bin/bash
+root:x:0:0:root:/root:/bin/bash
+payal:x:1000:1000:payal,,,:/home/payal:/bin/bash
+deva:x:1001:1002:,,,:/home/deva:/bin/bash
+arnav:x:1002:1001:,,,:/home/arnav:/bin/bash
+aurangabad:x:1003:1003:aurangabad,1,w,h,n:/home/aurangabad:/bin/bash
+hirapur:x:1004:1003:,,,:/home/hirapur:/bin/bash
+kannad:x:1005:1003:,,,:/home/kannad:/bin/bash
+adgaon:x:1006:1003:,,,:/home/adgaon:/bin/bash
+payal@payal-VirtualBox:/etc$ 
+
 to see shells go etc
 $ cd /etc
 payal@payal-VirtualBox:/etc$ cat shells
@@ -14,6 +25,7 @@ payal@payal-VirtualBox:/etc$ cat shells
 /bin/bash
 /bin/rbash
 /bin/dash
+
 payal@payal-VirtualBox:/etc$ cat group
 root:x:0:
 daemon:x:1:
