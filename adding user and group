@@ -50,3 +50,25 @@ payal@payal-VirtualBox:~$ sudo adduser deva mobile
 Adding user `deva' to group `mobile' ...
 Adding user deva to group mobile
 Done.
+
+*to check group of users and id of that users:*
+payal@payal-VirtualBox:~$ id deva
+uid=1001(deva) gid=1002(jlgroup) groups=1002(jlgroup),27(sudo),1006(mobile)
+*gid = is primary group here jlgroup*
+*groups = rather than jlgroup other are secondary group*
+
+usermod =change group
+*if we want to change primary group*
+payal@payal-VirtualBox:~$ sudo usermod deva -g sudo
+payal@payal-VirtualBox:~$ id deva
+uid=1001(deva) gid=27(sudo) groups=27(sudo),1002(jlgroup),1006(mobile)
+
+
+*delete user from secondary group*
+payal@payal-VirtualBox:~$ sudo delgroup deva jlgroup
+Removing user `deva' from group `jlgroup' ...
+Done.
+
+
+
+
