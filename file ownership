@@ -1,0 +1,142 @@
+*how to find users when we create it on home _/home*
+payal@payal-VirtualBox:/etc$ cat passwd
+kernoops:x:113:65534:Kernel Oops Tracking Daemon,,,:/:/usr/sbin/nologin
+saned:x:114:119::/var/lib/saned:/usr/sbin/nologin
+avahi:x:115:120:Avahi mDNS daemon,,,:/var/run/avahi-daemon:/usr/sbin/nologin
+colord:x:116:121:colord colour management daemon,,,:/var/lib/colord:/usr/sbin/nologin
+hplip:x:117:7:HPLIP system user,,,:/var/run/hplip:/bin/false
+geoclue:x:118:122::/var/lib/geoclue:/usr/sbin/nologin
+pulse:x:119:123:PulseAudio daemon,,,:/var/run/pulse:/usr/sbin/nologin
+gnome-initial-setup:x:120:65534::/run/gnome-initial-setup/:/bin/false
+gdm:x:121:125:Gnome Display Manager:/var/lib/gdm3:/bin/false
+payal:x:1000:1000:payal,,,:/home/payal:/bin/bash
+vboxadd:x:999:1::/var/run/vboxadd:/bin/false
+deva:x:1001:27:,,,:/home/deva:/bin/bash
+arnav:x:1002:1001:,,,:/home/arnav:/bin/bash
+aurangabad:x:1003:1003:aurangabad,1,w,h,n:/home/aurangabad:/bin/bash
+hirapur:x:1004:1003:,,,:/home/hirapur:/bin/bash
+kannad:x:1005:1003:,,,:/home/kannad:/bin/bash
+adgaon:x:1006:1003:,,,:/home/adgaon:/bin/bash
+anna:x:1007:1004:,,,:/home/anna:/bin/bash
+kiran:x:1008:1005:,,,:/home/kiran:/bin/bash
+neha:x:1009:1006:,,,:/home/neha:/bin/bash
+payal@payal-VirtualBox:/etc$ cd
+payal@payal-VirtualBox:~$ cd /home
+payal@payal-VirtualBox:/home$ ls
+adgaon  anna  arnav  aurangabad  deva  hirapur  kannad  kira  kiran  neha  payal
+payal@payal-VirtualBox:/home$ ls -l
+total 44
+drwxr-xr-x  2 adgaon     aurangabad 4096 Jul 30 12:09 adgaon
+drwxr-xr-x  2 anna       anna       4096 Jul 31 00:31 anna
+drwxr-xr-x  2 arnav      deva       4096 Jul 29 14:34 arnav
+drwxr-xr-x  2 aurangabad aurangabad 4096 Jul 30 12:01 aurangabad
+drwxr-xr-x  3 deva       sudo       4096 Jul 29 13:48 deva
+drwxr-xr-x  2 hirapur    aurangabad 4096 Jul 30 12:04 hirapur
+drwxr-xr-x  2 kannad     aurangabad 4096 Jul 30 12:05 kannad
+drwxr-xr-x 14 arnav      jlgroup    4096 Jul 29 01:11 kira
+drwxr-xr-x  2 kiran      kiran      4096 Jul 31 02:15 kiran
+drwxr-xr-x  2 neha       mobile     4096 Jul 31 02:19 neha
+drwxr-xr-x 20 payal      payal      4096 Jul 30 23:58 payal
+ 
+ changing ownrsheep suppose we change owner of adagaon to deva
+ 
+ payal@payal-VirtualBox:/home$ sudo chown deva adgaon
+[sudo] password for payal: 
+payal@payal-VirtualBox:/home$ ls -l
+total 44
+drwxr-xr-x  2 deva       aurangabad 4096 Jul 30 12:09 adgaon
+drwxr-xr-x  2 anna       anna       4096 Jul 31 00:31 anna
+drwxr-xr-x  2 arnav      deva       4096 Jul 29 14:34 arnav
+drwxr-xr-x  2 aurangabad aurangabad 4096 Jul 30 12:01 aurangabad
+drwxr-xr-x  3 deva       sudo       4096 Jul 29 13:48 deva
+drwxr-xr-x  2 hirapur    aurangabad 4096 Jul 30 12:04 hirapur
+drwxr-xr-x  2 kannad     aurangabad 4096 Jul 30 12:05 kannad
+drwxr-xr-x 14 arnav      jlgroup    4096 Jul 29 01:11 kira
+drwxr-xr-x  2 kiran      kiran      4096 Jul 31 02:15 kiran
+drwxr-xr-x  2 neha       mobile     4096 Jul 31 02:19 neha
+drwxr-xr-x 20 payal      payal      4096 Jul 30 23:58 payal
+payal@payal-VirtualBox:/home$ sudo chown payal aurangabad
+payal@payal-VirtualBox:/home$ ls -l
+total 44
+drwxr-xr-x  2 deva    aurangabad 4096 Jul 30 12:09 adgaon
+drwxr-xr-x  2 anna    anna       4096 Jul 31 00:31 anna
+drwxr-xr-x  2 arnav   deva       4096 Jul 29 14:34 arnav
+drwxr-xr-x  2 payal   aurangabad 4096 Jul 30 12:01 aurangabad
+drwxr-xr-x  3 deva    sudo       4096 Jul 29 13:48 deva
+drwxr-xr-x  2 hirapur aurangabad 4096 Jul 30 12:04 hirapur
+drwxr-xr-x  2 kannad  aurangabad 4096 Jul 30 12:05 kannad
+drwxr-xr-x 14 arnav   jlgroup    4096 Jul 29 01:11 kira
+drwxr-xr-x  2 kiran   kiran      4096 Jul 31 02:15 kiran
+drwxr-xr-x  2 neha    mobile     4096 Jul 31 02:19 neha
+drwxr-xr-x 20 payal   payal      4096 Jul 30 23:58 payal
+payal@payal-VirtualBox:/home$ sudo chown arnav hirapur
+payal@payal-VirtualBox:/home$ ls -l
+total 44
+drwxr-xr-x  2 deva   aurangabad 4096 Jul 30 12:09 adgaon
+drwxr-xr-x  2 anna   anna       4096 Jul 31 00:31 anna
+drwxr-xr-x  2 arnav  deva       4096 Jul 29 14:34 arnav
+drwxr-xr-x  2 payal  aurangabad 4096 Jul 30 12:01 aurangabad
+drwxr-xr-x  3 deva   sudo       4096 Jul 29 13:48 deva
+drwxr-xr-x  2 arnav  aurangabad 4096 Jul 30 12:04 hirapur
+drwxr-xr-x  2 kannad aurangabad 4096 Jul 30 12:05 kannad
+drwxr-xr-x 14 arnav  jlgroup    4096 Jul 29 01:11 kira
+drwxr-xr-x  2 kiran  kiran      4096 Jul 31 02:15 kiran
+drwxr-xr-x  2 neha   mobile     4096 Jul 31 02:19 neha
+drwxr-xr-x 20 payal  payal      4096 Jul 30 23:58 payal
+payal@payal-VirtualBox:/home$ sudo chown kannad neha
+payal@payal-VirtualBox:/home$ sudo chown neha payal
+payal@payal-VirtualBox:/home$ ls -l
+total 44
+drwxr-xr-x  2 deva   aurangabad 4096 Jul 30 12:09 adgaon
+drwxr-xr-x  2 anna   anna       4096 Jul 31 00:31 anna
+drwxr-xr-x  2 arnav  deva       4096 Jul 29 14:34 arnav
+drwxr-xr-x  2 payal  aurangabad 4096 Jul 30 12:01 aurangabad
+drwxr-xr-x  3 deva   sudo       4096 Jul 29 13:48 deva
+drwxr-xr-x  2 arnav  aurangabad 4096 Jul 30 12:04 hirapur
+drwxr-xr-x  2 kannad aurangabad 4096 Jul 30 12:05 kannad
+drwxr-xr-x 14 arnav  jlgroup    4096 Jul 29 01:11 kira
+drwxr-xr-x  2 kiran  kiran      4096 Jul 31 02:15 kiran
+drwxr-xr-x  2 kannad mobile     4096 Jul 31 02:19 neha
+drwxr-xr-x 20 neha   payal      4096 Jul 30 23:58 payal
+payal@payal-VirtualBox:/home$ sudo chown neha kannad
+payal@payal-VirtualBox:/home$ ls -l
+total 44
+drwxr-xr-x  2 deva   aurangabad 4096 Jul 30 12:09 adgaon
+drwxr-xr-x  2 anna   anna       4096 Jul 31 00:31 anna
+drwxr-xr-x  2 arnav  deva       4096 Jul 29 14:34 arnav
+drwxr-xr-x  2 payal  aurangabad 4096 Jul 30 12:01 aurangabad
+drwxr-xr-x  3 deva   sudo       4096 Jul 29 13:48 deva
+drwxr-xr-x  2 arnav  aurangabad 4096 Jul 30 12:04 hirapur
+drwxr-xr-x  2 neha   aurangabad 4096 Jul 30 12:05 kannad
+drwxr-xr-x 14 arnav  jlgroup    4096 Jul 29 01:11 kira
+drwxr-xr-x  2 kiran  kiran      4096 Jul 31 02:15 kiran
+drwxr-xr-x  2 kannad mobile     4096 Jul 31 02:19 neha
+drwxr-xr-x 20 neha   payal      4096 Jul 30 23:58 payal
+payal@payal-VirtualBox:/home$ sudo chgrp aurangabad payal
+payal@payal-VirtualBox:/home$ ls -l
+total 44
+drwxr-xr-x  2 deva   aurangabad 4096 Jul 30 12:09 adgaon
+drwxr-xr-x  2 anna   anna       4096 Jul 31 00:31 anna
+drwxr-xr-x  2 arnav  deva       4096 Jul 29 14:34 arnav
+drwxr-xr-x  2 payal  aurangabad 4096 Jul 30 12:01 aurangabad
+drwxr-xr-x  3 deva   sudo       4096 Jul 29 13:48 deva
+drwxr-xr-x  2 arnav  aurangabad 4096 Jul 30 12:04 hirapur
+drwxr-xr-x  2 neha   aurangabad 4096 Jul 30 12:05 kannad
+drwxr-xr-x 14 arnav  jlgroup    4096 Jul 29 01:11 kira
+drwxr-xr-x  2 kiran  kiran      4096 Jul 31 02:15 kiran
+drwxr-xr-x  2 kannad mobile     4096 Jul 31 02:19 neha
+drwxr-xr-x 20 neha   aurangabad 4096 Jul 30 23:58 payal
+payal@payal-VirtualBox:/home$ sudo chown deva neha
+payal@payal-VirtualBox:/home$ ls -l
+total 44
+drwxr-xr-x  2 deva  aurangabad 4096 Jul 30 12:09 adgaon
+drwxr-xr-x  2 anna  anna       4096 Jul 31 00:31 anna
+drwxr-xr-x  2 arnav deva       4096 Jul 29 14:34 arnav
+drwxr-xr-x  2 payal aurangabad 4096 Jul 30 12:01 aurangabad
+drwxr-xr-x  3 deva  sudo       4096 Jul 29 13:48 deva
+drwxr-xr-x  2 arnav aurangabad 4096 Jul 30 12:04 hirapur
+drwxr-xr-x  2 neha  aurangabad 4096 Jul 30 12:05 kannad
+drwxr-xr-x 14 arnav jlgroup    4096 Jul 29 01:11 kira
+drwxr-xr-x  2 kiran kiran      4096 Jul 31 02:15 kiran
+drwxr-xr-x  2 deva  mobile     4096 Jul 31 02:19 neha
+drwxr-xr-x 20 neha  aurangabad 4096 Jul 30 23:58 payal
