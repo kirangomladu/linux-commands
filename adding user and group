@@ -1,0 +1,52 @@
+
+payal@payal-VirtualBox:~$ sudo adduser kiran
+Adding user `kiran' ...
+Adding new group `kiran' (1005) ...
+Adding new user `kiran' (1008) with group `kiran' ...
+Creating home directory `/home/kiran' ...
+Copying files from `/etc/skel' ...
+Enter new UNIX password: 
+Retype new UNIX password: 
+passwd: password updated successfully
+Changing the user information for kiran
+Enter the new value, or press ENTER for the default
+	Full Name []: 
+	Room Number []: 
+	Work Phone []: 
+	Home Phone []: 
+	Other []: 
+
+Is the information correct? [Y/n] y
+
+
+
+adding group 
+
+firstly add a group
+payal@payal-VirtualBox:~$ sudo addgroup mobile
+Adding group `mobile' (GID 1006) ...
+Done.
+ 
+*adding a new user on existing group*
+payal@payal-VirtualBox:~$ sudo adduser neha --ingroup mobile
+Adding user `neha' ...
+Adding new user `neha' (1009) with group `mobile' ...
+Creating home directory `/home/neha' ...
+Copying files from `/etc/skel' ...
+Enter new UNIX password: 
+Retype new UNIX password: 
+passwd: password updated successfully
+Changing the user information for neha
+Enter the new value, or press ENTER for the default
+	Full Name []: 
+	Room Number []: 
+	Work Phone []: 
+	Home Phone []: 
+	Other []: 
+Is the information correct? [Y/n] 
+
+*adding existing user in existing group*
+payal@payal-VirtualBox:~$ sudo adduser deva mobile
+Adding user `deva' to group `mobile' ...
+Adding user deva to group mobile
+Done.
