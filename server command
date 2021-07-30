@@ -1,0 +1,93 @@
+*all 4 digit id are human other system are 3 digit except root*
+*human users recongnizethrough -the are all from /home directory and all human user are login/access from bin\bash*
+BASH=Borne again shell (human interact with the black and white screen(terminal) this terminal is called bash)
+if we want to see no. of users on server
+$cd /etc/
+$ cat passwd(shows all sys+users)
+we require only human users for that command used is =$grep
+$cat passwd | grep /bin/bash    (grep is used with pipe symbol(cmd1 |cmd 2))
+to see shells go etc
+$ cd /etc
+payal@payal-VirtualBox:/etc$ cat shells
+# /etc/shells: valid login shells
+/bin/sh
+/bin/bash
+/bin/rbash
+/bin/dash
+payal@payal-VirtualBox:/etc$ cat group
+root:x:0:
+daemon:x:1:
+bin:x:2:
+sys:x:3:
+adm:x:4:syslog,payal
+tty:x:5:
+disk:x:6:
+lp:x:7:
+mail:x:8:
+news:x:9:
+uucp:x:10:
+man:x:12:
+proxy:x:13:
+kmem:x:15:
+dialout:x:20:
+fax:x:21:
+voice:x:22:
+cdrom:x:24:payal
+floppy:x:25:
+tape:x:26:
+sudo:x:27:payal,deva
+audio:x:29:pulse
+dip:x:30:payal
+www-data:x:33:
+backup:x:34:
+operator:x:37:
+list:x:38:
+irc:x:39:
+src:x:40:
+gnats:x:41:
+shadow:x:42:
+utmp:x:43:
+video:x:44:
+sasl:x:45:
+plugdev:x:46:payal
+staff:x:50:
+games:x:60:
+users:x:100:
+nogroup:x:65534:
+systemd-journal:x:101:
+systemd-network:x:102:
+systemd-resolve:x:103:
+input:x:104:
+crontab:x:105:
+syslog:x:106:
+messagebus:x:107:
+netdev:x:108:
+mlocate:x:109:
+ssl-cert:x:110:
+uuidd:x:111:
+avahi-autoipd:x:112:
+bluetooth:x:113:
+rtkit:x:114:
+ssh:x:115:
+lpadmin:x:116:payal
+whoopsie:x:117:
+scanner:x:118:saned
+saned:x:119:
+avahi:x:120:
+colord:x:121:
+geoclue:x:122:
+pulse:x:123:
+pulse-access:x:124:
+gdm:x:125:
+payal:x:1000:
+sambashare:x:126:payal
+vboxsf:x:999:
+deva:x:1001:
+jlgroup:x:1002:payal,deva
+aurangabad:x:1003:
+
+
+
+
+
+
