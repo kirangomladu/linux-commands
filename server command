@@ -83,8 +83,8 @@ payal:x:1000:
 sambashare:x:126:payal
 vboxsf:x:999:
 deva:x:1001:
-jlgroup:x:1002:payal,deva
-aurangabad:x:1003:
+jlgroup:x:1002:payal,deva(NO. OF 2 USERS FOR JL
+aurangabad:x:1003:(4 DIGIT REPRESENT HUMAN GROUP)
 
 
 
