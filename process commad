@@ -1,0 +1,132 @@
+process:small tasks
+progam:is set of these small task
+thread:process are divide im small small process to work cpu fast these small process are called thread
+deamon:is background process which take input from multiple processes and and multipe process are depend on the output of deamon
+
+PS command: is used to see the process which currently working it gives snapshot()
+payal@payal-VirtualBox:~$ ps
+  PID TTY          TIME CMD
+ 2393 pts/0    00:00:00 bash(pts=pseudo terminal slave it is terminal device emulated by the other program)
+ 3200 pts/0    00:00:00 ps
+ (where pid is process id tty is terminal on which process run time at which they rum and cmd is command run on it)
+
+(ps -u checking process of perticula users
+ payal@payal-VirtualBox:~$ ps -u root
+  PID TTY          TIME CMD
+    1 ?        00:00:05 systemd( this is first process started by system)
+    2 ?        00:00:00 kthreadd( ? shows that it is boating process)
+    3 ?        00:00:00 rcu_gp
+    4 ?        00:00:00 rcu_par_gp
+    6 ?        00:00:00 kworker/0:0H-kb
+    9 ?        00:00:00 mm_percpu_wq
+   10 ?        00:00:00 ksoftirqd/0
+   11 ?        00:00:01 rcu_sched
+   12 ?        00:00:00 migration/0
+   13 ?        00:00:00 idle_inject/0
+   14 ?        00:00:00 cpuhp/0
+   15 ?        00:00:00 cpuhp/1
+   16 ?        00:00:00 idle_inject/1
+   17 ?        00:00:00 migration/1
+   18 ?        00:00:00 ksoftirqd/1
+   20 ?        00:00:00 kworker/1:0H-kb
+   21 ?        00:00:00 kdevtmpfs
+   22 ?        00:00:00 netns
+   23 ?        00:00:00 rcu_tasks_kthre
+   24 ?        00:00:00 kauditd
+   25 ?        00:00:00 khungtaskd
+   26 ?        00:00:00 oom_reaper
+   27 ?        00:00:00 writeback
+   28 ?        00:00:00 kcompactd0
+   29 ?        00:00:00 ksmd
+   30 ?        00:00:00 khugepaged
+  123 ?        00:00:00 kintegrityd
+  124 ?        00:00:00 kblockd
+  125 ?        00:00:00 blkcg_punt_bio
+  126 ?        00:00:00 tpm_dev_wq
+  127 ?        00:00:00 ata_sff
+  128 ?        00:00:00 md
+  129 ?        00:00:00 edac-poller
+  130 ?        00:00:00 devfreq_wq
+  131 ?        00:00:00 watchdogd
+  133 ?        00:00:07 kworker/1:2-cgr
+  136 ?        00:00:00 kswapd0
+  137 ?        00:00:00 ecryptfs-kthrea
+  140 ?        00:00:00 kthrotld
+  141 ?        00:00:00 acpi_thermal_pm
+  142 ?        00:00:00 scsi_eh_0
+  143 ?        00:00:00 scsi_tmf_0
+  144 ?        00:00:00 scsi_eh_1
+  145 ?        00:00:00 scsi_tmf_1
+  147 ?        00:00:00 vfio-irqfd-clea
+  149 ?        00:00:00 ipv6_addrconf
+  160 ?        00:00:00 kstrp
+  164 ?        00:00:00 kworker/u5:0
+  180 ?        00:00:00 charger_manager
+  218 ?        00:00:00 scsi_eh_2
+  219 ?        00:00:00 scsi_tmf_2
+  221 ?        00:00:00 kworker/1:1H-kb
+  224 ?        00:00:00 kdmflush
+  226 ?        00:00:00 kdmflush
+  238 ?        00:00:00 kworker/0:1H-kb
+  260 ?        00:00:00 jbd2/dm-0-8
+  261 ?        00:00:00 ext4-rsv-conver
+  303 ?        00:00:00 systemd-journal
+  325 ?        00:00:00 systemd-udevd
+  327 ?        00:00:00 lvmetad
+  331 ?        00:00:00 loop0
+  333 ?        00:00:00 loop1
+  334 ?        00:00:00 loop2
+  336 ?        00:00:00 loop3
+  338 ?        00:00:00 loop4
+  340 ?        00:00:00 loop5
+  342 ?        00:00:00 loop6
+  350 ?        00:00:00 loop7
+  354 ?        00:00:00 loop8
+  356 ?        00:00:00 loop9
+  358 ?        00:00:00 loop10
+  361 ?        00:00:00 loop11
+  363 ?        00:00:00 loop12
+  365 ?        00:00:00 loop13
+  367 ?        00:00:00 loop14
+  369 ?        00:00:00 loop15
+  371 ?        00:00:00 loop16
+  373 ?        00:00:00 loop17
+  437 ?        00:00:00 iprt-VBoxWQueue
+  478 ?        00:00:00 irq/18-vmwgfx
+  479 ?        00:00:00 ttm_swap
+  485 ?        00:00:00 cryptd
+  789 ?        00:00:00 udisksd
+  798 ?        00:00:00 wpa_supplicant
+  802 ?        00:00:00 cron
+  806 ?        00:00:00 ModemManager
+  808 ?        00:00:01 NetworkManager
+  810 ?        00:00:00 accounts-daemon
+  814 ?        00:00:00 irqbalance
+  832 ?        00:00:05 snapd
+  837 ?        00:00:00 acpid
+  839 ?        00:00:00 networkd-dispat
+  840 ?        00:00:00 systemd-logind
+  892 ?        00:00:01 polkitd
+  933 ?        00:00:00 unattended-upgr
+ 1429 ?        00:00:00 gdm3
+ 1434 ?        00:00:03 VBoxService
+ 1447 ?        00:00:00 gdm-session-wor
+ 1485 ?        00:00:00 upowerd
+ 1495 ?        00:00:02 kworker/0:4-eve
+ 1559 ?        00:00:00 boltd
+ 1566 ?        00:00:13 packagekitd
+ 1741 ?        00:00:00 gdm-session-wor
+ 2562 ?        00:00:00 cupsd
+ 2564 ?        00:00:00 cups-browsed
+ 3099 ?        00:00:00 kworker/u4:0-ev
+ 3141 ?        00:00:00 kworker/0:1-cgr
+ 3159 ?        00:00:01 kworker/1:1-eve
+ 3160 ?        00:00:00 dhclient
+ 3206 ?        00:00:00 kworker/u4:1-ev
+ 3280 ?        00:00:00 kworker/u4:2
+ 3281 tty3     00:00:00 agetty   (agetty is text text based login)
+ 3282 tty4     00:00:00 agetty
+ 3283 tty5     00:00:00 agetty
+ 3284 tty6     00:00:00 agetty
+
+ 
