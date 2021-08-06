@@ -51,6 +51,7 @@ Adding user `deva' to group `mobile' ...
 Adding user deva to group mobile
 Done.
 
+
 *to check group of users and id of that users:*
 payal@payal-VirtualBox:~$ id deva
 uid=1001(deva) gid=1002(jlgroup) groups=1002(jlgroup),27(sudo),1006(mobile)
@@ -69,6 +70,11 @@ payal@payal-VirtualBox:~$ sudo delgroup deva jlgroup
 Removing user `deva' from group `jlgroup' ...
 Done.
 
+* to check how many users are in system*
+$cat /etc/passwd
+it shows user as will as system user
+$cat /etc/passwd |grep /bin/bash
+using this we can see only user
 
 
 
