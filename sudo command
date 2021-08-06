@@ -1,0 +1,9 @@
+to check sudo file /etc/sudors file
+if we want to check privilage then cmmand is 
+$sudo visudo
+\
+
+to check how many have sudo privailage cmd is:
+
+grep -Po '^sudo.+:\K.*$' /etc/group
+payal,kira

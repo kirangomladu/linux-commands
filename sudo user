@@ -1,4 +1,0 @@
-to check how many have sudo privailage cmd is:
-
-grep -Po '^sudo.+:\K.*$' /etc/group
-payal,kira
