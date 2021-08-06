@@ -73,8 +73,16 @@ Done.
 * to check how many users are in system*
 $cat /etc/passwd
 it shows user as will as system user
-$cat /etc/passwd |grep /bin/bash
+$cat /etc/passwd |grep /bin/bash(human user login from bin(in that application are stored)/bash(user connect thr.black and white screen called shell))
 using this we can see only user
+
+
+*to check group in system
+$cd /etc
+etc$nano group
+
+$grep(pattern matching)
+$ cat passwd |grep /bin/bash
 
 
 
