@@ -7,3 +7,8 @@ to check how many have sudo privailage cmd is:
 
 grep -Po '^sudo.+:\K.*$' /etc/group
 payal,kira
+(grep: Prints all the lines matching a regex in a file
+-P: makes grep match Perl-style regexes
+o: makes grep print only the matched string
+'^sudo.+:\K.*$': makes grep match the regex between the quotes)
+
